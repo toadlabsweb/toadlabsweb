@@ -84,12 +84,12 @@ class RootIndex extends React.Component {
             <div className="card mb-3 bg-transparent border-0 "  >
               <div className="row g-0">
                 <div className="col-md-6 position-relative">              
-                {/* <GatsbyImage className="howwework-image" image={howwework.image.gatsbyImageData}/> */}
-                  <div className="embed-responsive embed-responsive-16by9 "> 
+                 <GatsbyImage className="howwework-image" image={howwework.image.gatsbyImageData}/>
+                  {/*<div className="embed-responsive embed-responsive-16by9 "> 
                     <video className="embed-responsive-item" controls>
                       <source className="" src={TLvideo} type="video/mp4"/>
                     </video>
-                  </div>
+                  </div> */}
           
                </div>
 
