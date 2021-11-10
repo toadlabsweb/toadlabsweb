@@ -42,7 +42,7 @@ body{
 
 h1 {
     font-family: 'Monoton', cursive;
-    font-size: 10rem!important;
+    font-size: clamp(2rem, 5vh, 10rem)!important; 
     background: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7); 
 }
 
