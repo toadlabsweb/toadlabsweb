@@ -19,17 +19,6 @@ class About extends React.Component {
         <Seo title="ABOUT" />
         <Hero title="ABOUT"  image={hero.image.GatsbyImageData}/>
 
-//               <section className="text-center">
-//                 <h1 className="text"> {aboutus.title} </h1>
-//                 <h2> {aboutus.title} </h2>
-//                 <h3> {aboutus.title} </h3>
-//                 <h4> {aboutus.title} </h4>
-//                 <h5> {aboutus.title} </h5>
-//                 <h6> {aboutus.title} </h6>
-//                 <p> {aboutus.title} </p>
-//               </section>
-
-                
 
         <section>
           <div className="card mb-3 bg-transparent border-0"  >
