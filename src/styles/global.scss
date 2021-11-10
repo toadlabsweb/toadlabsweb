@@ -1,0 +1,234 @@
+@use 'components/article-preview';
+@use 'components/footer';
+@use 'components/hero';
+@use 'components/heroimg';
+@use 'components/navigation';
+@use 'components/product-group';
+@use 'components/product-item';
+@use 'components/solutions-item';
+@use 'components/tags';
+@use 'components/team';
+@use 'components/variables';
+@use 'pages/solutions';
+@use 'pages/aboutus';
+@use 'pages/blog';
+@use 'pages/contact';
+@use 'pages/index';
+@use 'pages/products';
+@use 'templates/blog-post';
+
+
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+      
+html * {
+    box-sizing: border-box;
+}
+      
+
+body{
+    // background-image: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7)!important;
+    background-color: #00426f!important;
+}
+
+::selection {
+    /*  background: var(--color-primary);*/
+    background: #71bbd8;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 10rem!important;
+    background: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7); 
+}
+
+.text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,.2);
+    width: 100%;
+  }
+
+h2, h3, h4, h5, h6 {
+
+    font-family: 'Bitter', serif;
+    // font-family: 'Work Sans', sans-serif;
+    color: white; 
+}
+
+h2 {
+    font-size: 4rem!important;
+}
+
+h3 {
+    font-size: 3.5rem!important;
+}
+
+h4 {
+    font-size: 3rem!important;
+}
+
+h5 {
+    font-size: 2.5rem!important;
+} 
+
+h6 {
+    font-size: 2rem!important;
+}
+
+p { 
+    font-family: 'Work Sans', sans-serif;
+    color: white!important;
+    font-size: 1.6rem;
+}
+
+li { 
+    color: #ffffff;  
+}
+
+section{
+    margin: 5rem 0; 
+}
+
+
+// .section-title{
+//     text-align: center; 
+//     padding-top: 8rem;
+//     text-transform: uppercase;
+// }
+
+// .section-text{
+//     text-align: center;
+// }
+
+
+  .btn-outline-light:hover, .btn-outline-light:active, .btn-outline-light:visited {
+   background-image: linear-gradient(to right, #FF0000 , #F1E400, #76E244, #00A7E7)!important;
+}
+
+.grad {
+    background-image: linear-gradient(to right, #FF0000 25%, #F1E400 25%, #76E244 25%, #00A7E7 25%);
+}
+
+
+a, .link{
+    color: rgb(165, 165, 165) !important;
+    font-weight: 600;
+     text-decoration: none !important;
+    
+     &:hover{
+      color: rgba(124, 124, 124, 0.493) !important; 
+   } 
+}
+ 
+
+
+
+/***************************************************************/
+
+// @font-face {
+//     font-family: 'Inter var';
+//     font-weight: 100 900;
+//     font-display: swap;
+//     font-style: normal;
+//     font-named-instance: 'Regular';
+//     src: url('/fonts/Inter-roman.var.woff2?v=3.19') format('woff2');
+//   }
+  
+//   @font-face {
+//     font-family: 'Inter var';
+//     font-weight: 100 900;
+//     font-display: swap;
+//     font-style: italic;
+//     font-named-instance: 'Italic';
+//     src: url('/fonts/Inter-italic.var.woff2?v=3.19') format('woff2');
+//   }
+  
+//   html {
+//     scroll-behavior: smooth;
+//   }
+  
+//   html * {
+//     box-sizing: border-box;
+//   }
+  
+//   body {
+//     background: var(--background);
+//     color: var(--text-color);
+//     font-family: var(--font-sans);
+//     font-size: 16px;
+//     font-weight: var(--body);
+//     line-height: var(--default);
+//     margin: 0;
+//     text-rendering: optimizeLegibility;
+//     -webkit-font-smoothing: antialiased;
+//   }
+  
+//   img {
+//     display: block;
+//     width: 100%;
+//   }
+  
+//   h1,
+//   h2,
+//   h3,
+//   h4,
+//   h5,
+//   h6 {
+//     font-weight: var(--semibold);
+//     line-height: var(--dense);
+//   }
+  
+//   a {
+//     color: currentColor;
+//     text-decoration: none;
+//   }
+  
+//   a:hover {
+//     color: var(--primary);
+//   }
+  
+//   a.active {
+//     font-weight: var(--bold);
+//   }
+  
+//   tt,
+//   code,
+//   kbd {
+//     background: var(--black-fade-5);
+//     padding-bottom: 0.2em;
+//     padding-top: 0.2em;
+//   }
+  
+//   tt,
+//   code,
+//   kbd {
+//     font-family: var(--font-monospace);
+//     font-size: 90%;
+//   }
+  
+//   tt,
+//   code {
+//     background-color: var(--black-fade-5);
+//     border-radius: var(--radius-sm);
+//     font-weight: var(--medium);
+//     padding: 0.2em 0;
+//   }
+  
+//   code:before,
+//   code:after,
+//   tt:before,
+//   tt:after {
+//     content: ' ';
+//     letter-spacing: -0.2em;
+//   }
+  
+//   pre,
+//   code {
+//     font-family: var(--font-monospace);
+//   }
+  

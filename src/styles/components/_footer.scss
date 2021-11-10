@@ -1,0 +1,19 @@
+footer{
+    background: #242c30!important;
+    margin: 0;
+    padding: 4rem 0;
+
+    & .footer-text{
+        line-height: 5px;
+    }
+
+    & .footer-icons{
+            color: rgb(255, 255, 255);
+            font-size: 3rem;
+            
+            &:hover{
+                color: rgb(163, 163, 163);
+            }
+    }
+
+}

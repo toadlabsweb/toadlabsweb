@@ -1,0 +1,12 @@
+input, textarea {
+    color: blue;
+    background: transparent!important ;
+    border-radius: 0!important;
+    border: none!important;
+    border-bottom: 2px white solid!important;
+  }
+
+  ::placeholder {  
+    color: rgb(255, 255, 255)!important;
+    text-align: center;
+  }

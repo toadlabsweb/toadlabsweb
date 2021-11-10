@@ -1,0 +1,20 @@
+.solutions-item{ 
+    padding: auto;
+    opacity: 75%;
+
+    &:hover{
+        opacity: 95%;
+    }
+}
+
+.card-text{
+
+    & h3, p{
+        color: black;
+    }   
+}
+
+.solutions-image{ 
+    border-radius: 0!important;
+}
+
