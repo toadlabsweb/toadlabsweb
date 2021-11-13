@@ -3,7 +3,7 @@
 import * as React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from 'gatsby'
-import TLShark from '../../static/videos/tl.mov'    
+import TLShark from '../../static/videos/tl2.mp4'  
 
 const HeroVideo = ({ image, title, subtitle, buttonText }) => {
   
@@ -14,7 +14,7 @@ const HeroVideo = ({ image, title, subtitle, buttonText }) => {
 
             {/* <!-- The HTML5 video element that will create the background video on the header --> */}
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-              <source src={TLShark} type="video/quicktime"/>
+              <source src={TLShark} type="video/mp4"/>
             </video>
 
           {/* <!-- The header content --> */}
