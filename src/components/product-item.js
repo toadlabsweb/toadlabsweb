@@ -16,7 +16,7 @@ const ProductItem = ({ products }) => {
                 <GatsbyImage className="img-fluid" alt="" image={product.featuredImage.gatsbyImageData} /> 
               </div>
 
-              <div className="col-12 col-md-6 product-text p-0 d-flex  justify-content-center align-items-center">
+              <div className="col-12 col-md-6 product-text p-0 d-flex justify-content-center align-items-center">
                 <div className="m-5">
                   <h3> {product.title} </h3>
                   <h6> Rs. {product.price} </h6>

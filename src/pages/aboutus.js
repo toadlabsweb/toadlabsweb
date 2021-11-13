@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero' 
+import HeroVideo from '../components/herovideo'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import Team from '../components/team'
 
@@ -16,19 +17,31 @@ class About extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <Seo title="ABOUT" />
+        <Seo title="ABOUT" /> 
         <Hero title="ABOUT"  image={hero.image.GatsbyImageData}/>
 
+        
+          {/*   <section className="text-center">
+                <h1 className="text"> {aboutus.title} </h1>
+                <h2> {aboutus.title} </h2>
+                <h3> {aboutus.title} </h3>
+                <h4> {aboutus.title} </h4>
+                <h5> {aboutus.title} </h5>
+                <h6> {aboutus.title} </h6>
+                <p> {aboutus.title} </p>
+              </section> */}
+
+                
 
         <section>
           <div className="card mb-3 bg-transparent border-0"  >
             <div className="row g-0">
               <div className="col-md-5 position-relative">
-                <GatsbyImage className="section-image" image={aboutus.image.gatsbyImageData}/> 
+               <GatsbyImage className="section-image" image={aboutus.image.gatsbyImageData}/> 
                 <h2 className="section-text position-absolute top-50 start-50 translate-middle"> {aboutus.title} </h2> 
               </div>
-              <div className="col-md-7">
-                <div className="card-body text-white px-5"> 
+              <div className="col-md-7 d-flex justify-content-center align-items-center">
+                <div className="card-body text-white px-5 "> 
                   <div dangerouslySetInnerHTML={{ __html: aboutus.content?.childMarkdownRemark?.html, }} />
                 </div>
               </div>
@@ -48,8 +61,8 @@ class About extends React.Component {
                   <GatsbyImage className="section-image" image={ourstory.image.gatsbyImageData}/>
                   <h2 className="section-text position-absolute top-50 start-50 translate-middle "> {ourstory.title} </h2>
                 </div>
-                <div className="col-md-8">
-                  <div className="card-body text-end px-5">
+                <div className="col-md-8 d-flex justify-content-center align-items-center">
+                  <div className="card-body text-md-end px-5">
                     <div dangerouslySetInnerHTML={{ __html: ourstory.content?.childMarkdownRemark?.html, }} />
                   </div>
                 </div>
@@ -60,10 +73,6 @@ class About extends React.Component {
               </div>
             </div>
           </section>
-
-       
-        
-          
       </Layout>
     )
   }

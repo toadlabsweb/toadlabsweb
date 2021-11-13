@@ -5,25 +5,23 @@
 .productgroup-item{ 
     padding: auto;
     
-            &:hover{
-                opacity: 75%;
-                color: rgb(172, 45, 45) !important;
-            }    
-        }
+        &:hover{
+            opacity: 75%;
+            color: rgb(172, 45, 45) !important;
+        }    
+    }
 
     .productgroup-image{ 
         border-radius: 0!important;
     }
 
 .card-text{
-
     & h3{
         font-size: 2rem;
         color: rgb(255, 255, 255) !important;      
-            }
+        }
     & p{
-
         color: rgb(255, 255, 255) !important;      
-           }
+        }
                 
 }  

@@ -24,7 +24,7 @@ export default Products
 
 export const pageQuery = graphql`
   query ProductsQuery {
-    products: allContentfulProducts(sort: {fields: title, order: ASC}) {
+    products: allContentfulProducts(sort: {fields: weight, order: ASC}) {
       nodes {
         title
         price

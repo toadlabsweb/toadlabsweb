@@ -1,7 +1,10 @@
 @use 'components/article-preview';
 @use 'components/footer';
+@use 'components/form';
 @use 'components/hero';
 @use 'components/heroimg';
+@use 'components/herovideo';
+@use 'components/sectionvideo';
 @use 'components/navigation';
 @use 'components/product-group';
 @use 'components/product-item';
@@ -42,7 +45,7 @@ body{
 
 h1 {
     font-family: 'Monoton', cursive;
-    font-size: clamp(2rem, 5vh, 10rem)!important; 
+    font-size: clamp(2rem, 5vh, 10rem)!important;
     background: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7); 
 }
 

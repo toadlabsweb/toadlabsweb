@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero' 
+import Form from '../components/form' 
+import { IoCallOutline, IoMailOpenOutline, IoLocationOutline } from "react-icons/io5";
 
 class Contact extends React.Component {
   render() {
@@ -13,44 +15,26 @@ class Contact extends React.Component {
       <Layout location={this.props.location}>
         <Seo title="CONTACT" />
         <Hero title="CONTACT" />
-         
 
-          <div className="container mx-auto text-center"> 
-            <h6>Toadlabs</h6>
-            <p><small className="text-muted">1st floor, Bimola Residency, Gandhibasti, Guwahati, Assam</small> </p> 
-            <p><small className="text-muted"> +919859934443 </small> </p>
-            <p><small className="text-muted">toadlabs@gmail.com</small></p>
-            <p><small className="text-muted">www.toadlabs.biz</small></p>
-             
+        <section>
+          <div className="container">
+            <div className="row">
+
+              <div className="col-md-6 mx-auto my-5"> 
+                <h6 className="mb-4">Toadlabs Technology Inc.</h6>
+                <p> <IoLocationOutline/>  1st floor, Bimola Residency, <br/> Gandhibasti, Guwahati, Assam </p> 
+                <p> <IoCallOutline/>  +91 985 993 4443 </p>
+                <p> <IoMailOpenOutline/> toadlabs@gmail.com </p> 
+              </div>
+
+              <div className="col-md-6 mx-auto my-5">
+                <h3 className="text-center my-3">GET IN TOUCH</h3>
+                <Form/>   
+              </div>
+
+            </div>
           </div>
-       
-
-      <div className="col-6 mx-auto my-5">
-        <h3 className="text-center my-3">GET IN TOUCH</h3>
-        <form className="row g-3">
-            <div className="col-md-6">
-              <input type="text" class="form-control" placeholder="First name" aria-label="First name"/>
-            </div>
-            <div className="col-md-6">
-              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"/>
-            </div>
-            <div className="col-6">
-              <input type="email" class="form-control" placeholder="name@example.com"/>
-            </div>
-            <div className="col-6">
-              <input type="text" className="form-control"   placeholder="Phone Number"/>
-            </div>
-            <div class="col-12"> 
-              <textarea class="form-control"placeholder="Your Message"  aria-label="With textarea"></textarea>
-            </div>
-            <div className="col-12 text-center">
-              <button type="submit" className="btn  btn-outline-light rounded-0 btn-lg px-5 py-2 ">SUBMIT</button>
-            </div>
-          </form>
-        </div> 
-
-
-
+        </section> 
       </Layout>
     )
   }

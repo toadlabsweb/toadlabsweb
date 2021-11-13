@@ -6,8 +6,9 @@ import Layout from '../components/layout'
 import HeroImg from '../components/heroimg'
 import ProductGroup from '../components/product-group'
 import ContentCreation from '../components/contentcreation'
-import Partners from '../components/partners'
-import TLvideo from '../../static/videos/tlvideo.mp4' 
+import Partners from '../components/partners' 
+import SectionVideo from '../components/sectionvideo'
+import HeroVideo from '../components/herovideo'
 
 class RootIndex extends React.Component {
   render() { 
@@ -20,28 +21,27 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <HeroImg
+
+      <HeroVideo
+         title={hero.title}
+         subtitle={hero.subtitle}
+         buttonText={hero.buttonText}  /> 
+        {/* <HeroImg
           image={hero.image.gatsbyImageData}
           title={hero.title}
           subtitle={hero.subtitle}
           buttonText={hero.buttonText} 
-        />  
+        />   */}
 
           <section>
             <div className="card mb-3 bg-transparent border-0"  >
               <div className="row g-0">
                 <div className="col-md-4 position-relative embed-responsive embed-responsive-16by9">
                 <GatsbyImage className="intro-image" image={intro.image.gatsbyImageData}/>
-                {/* <h2 className="intro-text position-absolute top-50 start-50 translate-middle"> {intro.title} </h2> 
-                <div className="embed-responsive embed-responsive-16by9 ">  
-                    <video className="embed-responsive-item" controls>
-                      <source className="" src={TLvideo} type="video/mp4"/>
-                    </video> 
-                  {/* </div> */}
+                
                 </div>
                 <div className="col-md-8">
-                  <div className="card-body px-5 animate__animated animate__fadeInUp  animate__delay-1s">
-                    {/* <h2 className="intro-text position-absolute top-50 start-50 translate-middle"> {intro.title} </h2> */}
+                  <div className="card-body px-5 animate__animated animate__fadeInUp  animate__delay-1s"> 
                     <div dangerouslySetInnerHTML={{ __html: intro.content?.childMarkdownRemark?.html, }} />
                   </div>
                 </div>
@@ -57,40 +57,12 @@ class RootIndex extends React.Component {
           <section>
               <Partners partners={partners} /> 
           </section> 
-
-
-        {/* <section>
-          <div className="embed-responsive embed-responsive-16by9 "> 
-            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/v1CInj-kUf0" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
-          </div>
-        </section> */}
-
-        {/* <section>
-          <div className="embed-responsive embed-responsive-16by9 "> 
-            <video className="embed-responsive-item" controls>
-              <source className="" src={TLvideo} type="video/mp4"/>
-            </video>
-          </div>
-        </section>
-         */}
-                     
-
+ 
           <section>    
             <div className="card mb-3 bg-transparent border-0 "  >
               <div className="row g-0">
-                <div className="col-md-6 position-relative">              
-                 <GatsbyImage className="howwework-image" image={howwework.image.gatsbyImageData}/>
-                  {/*<div className="embed-responsive embed-responsive-16by9 "> 
-                    <video className="embed-responsive-item" controls>
-                      <source className="" src={TLvideo} type="video/mp4"/>
-                    </video>
-                  </div> */}
-          
+                <div className="col-md-6 position-relative"> 
+                <SectionVideo />             
                </div>
 
                 <div className="col-md-6">
