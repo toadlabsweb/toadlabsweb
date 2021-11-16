@@ -15,19 +15,20 @@ const HeroVideo = ({ image, title, subtitle, buttonText }) => {
             {/* <!-- The HTML5 video element that will create the background video on the header --> */}
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
               <source src={TLShark} type="video/mp4"/>
+              {image && ( <GatsbyImage className="hero-image" alt={title} image={image} /> )} 
             </video>
 
-            {image && ( <GatsbyImage className="hero-image" alt={title} image={image} /> )} 
+            
 
           {/* <!-- The header content --> */}
                     <div class="container h-100">
                       <div class="d-flex h-100 text-center align-items-center">
-                        <div class="w-100 text-white">
+                        <div class="text-white">
                           {/* <h2 class="display-3">TOADLABS</h2>  */}
                           <div className="hero-text "> 
                             {subtitle && <h1 className="text animate__animated animate__backInDown  animate__delay-1s">{subtitle}</h1>}  
                             <Link to="/contact">
-                              <button className="btn btn-outline-light border-1 btn-lg">{buttonText}</button>
+                              <button className="btn btn-outline-light border-1 btn-lg animate__animated animate__backInDown  animate__delay-2s">{buttonText}</button>
                             </Link>
                           </div>
                         </div>

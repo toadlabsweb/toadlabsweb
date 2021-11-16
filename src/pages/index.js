@@ -7,7 +7,8 @@ import HeroImg from '../components/heroimg'
 import ProductGroup from '../components/product-group'
 import ContentCreation from '../components/contentcreation'
 import Partners from '../components/partners' 
-import SectionVideo from '../components/sectionvideo'
+import SectionVideo1 from '../components/sectionvideo1'
+import SectionVideo2 from '../components/sectionvideo2'
 import HeroVideo from '../components/herovideo'
 
 class RootIndex extends React.Component {
@@ -36,11 +37,11 @@ class RootIndex extends React.Component {
           <section>
             <div className="card mb-3 bg-transparent border-0"  >
               <div className="row g-0">
-                <div className="col-md-4 position-relative embed-responsive embed-responsive-16by9">
-                <GatsbyImage className="intro-image" image={intro.image.gatsbyImageData}/>
-                
+                <div className="col-md-6 position-relative">
+                {/* <GatsbyImage className="intro-image" image={intro.image.gatsbyImageData}/> */}
+                <SectionVideo1 />      
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-6  d-flex justify-content-center align-items-center">
                   <div className="card-body px-5 animate__animated animate__fadeInUp  animate__delay-1s"> 
                     <div dangerouslySetInnerHTML={{ __html: intro.content?.childMarkdownRemark?.html, }} />
                   </div>
@@ -62,7 +63,7 @@ class RootIndex extends React.Component {
             <div className="card mb-3 bg-transparent border-0 "  >
               <div className="row g-0">
                 <div className="col-md-6 position-relative"> 
-                <SectionVideo />             
+                <SectionVideo2 />             
                </div>
 
                 <div className="col-md-6">

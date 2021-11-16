@@ -39,7 +39,7 @@ class Contact extends React.Component {
  
 
               <div className="col-md-6 mx-auto my-5">
-                <h3 className="text-center my-3">GET IN TOUCH</h3>
+                <h3 className="text-center mb-3">GET IN TOUCH</h3>
                 <Form/>   
               </div>
 

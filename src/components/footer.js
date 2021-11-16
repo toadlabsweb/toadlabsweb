@@ -37,9 +37,9 @@ export default function Footer() {
         </div>
 
         
-        <div className="col-sm-6 text-center footer-icons">
-          <h4>Follow us on</h4> 
-          <SocialMedia />
+        <div className="col-sm-6 text-center">
+          <h4 className="mb-5">Follow us on</h4> 
+          <SocialMedia className="footer-icons" />
         </div>
       
       </div>
