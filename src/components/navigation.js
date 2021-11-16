@@ -22,7 +22,6 @@
 )
 
  
- 
 const menu = data.allContentfulPages?.nodes
   return (
  
@@ -30,12 +29,12 @@ const menu = data.allContentfulPages?.nodes
     <div className="container">
       <Link className="navbar-brand" to="/">
       <StaticImage
-        src="../../static/images/toadlabslogo.svg" alt="tllogo"
+        src="../../static/images/toadlabstecnologyinclogo.png" alt="tllogo"
         className="logo d-inline-block align-top"
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
-        width={75}
-        height={75}
+        width={100}
+        height={100}
         quality={95}
       />  
         <span className="hidden">ToadLabs Technologies Inc.</span>
@@ -66,12 +65,4 @@ const menu = data.allContentfulPages?.nodes
 }
               
 
-
-
 export default Navigation
-
- 
-
-
-
- 
