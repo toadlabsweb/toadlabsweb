@@ -7,13 +7,14 @@ footer{
         line-height: 10px;
     }
 
-    & .footer-icons{
-            color: rgb(255, 255, 255);
-            font-size: 3rem;
-            
-            &:hover{
-                color: rgb(163, 163, 163);
-            }
-    }
+}
 
+.footer-icons{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    
+    &:hover{
+        color: #00426f;
+        transform: scale(1.2);
+    }
 }
