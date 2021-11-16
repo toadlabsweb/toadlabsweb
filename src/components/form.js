@@ -1,7 +1,10 @@
 import React from 'react' 
 
 const Form = () => (
-            <form className="row g-3" name="contact" method="POST" data-netlify="true">
+            <form className="row g-3" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <p class="hidden">
+                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                </p>
                 <div className="col-md-6">
                   <input type="text" class="form-control" placeholder="First name" aria-label="First name"/>
                 </div>
