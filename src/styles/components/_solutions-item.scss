@@ -1,14 +1,25 @@
-.solutions-item{ 
-    padding: auto;
-    opacity: 75%;
+.solutions-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+.solutions-item{  
+    z-index: 1;
 
     &:hover{
-        opacity: 95%;
+        opacity: 75%;
     }
 }
 
 .card-text{
-
+    z-index: 10;
     & h3, p{
         color: black;
     }   
