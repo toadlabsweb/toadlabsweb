@@ -1,20 +1,20 @@
 /** HEROVideo COMPONENT **/
 
 import * as React from "react"
-import { GatsbyImage } from "gatsby-plugin-image"
-import { Link } from 'gatsby'
-import TLvideo from '../../static/videos/tlvideo.mp4'    
+// import { GatsbyImage } from "gatsby-plugin-image"
+// import { Link } from 'gatsby'
+import Adsintheair from '../../static/videos/adsintheair.mp4'    
 
 const SectionVideo1 = ({ image, title, subtitle, buttonText }) => {
   
  
   return (
-        <header className="section-video">
+        <div className="section-video">
            {/* <div class="hero-overlay"></div> */}
 
             {/* <!-- The HTML5 video element that will create the background video on the header --> */}
             <video playsinline="playsinline" controls preload muted>
-              <source src={TLvideo} type="video/mp4"/>
+              <source src={Adsintheair} type="video/mp4"/>
             </video>
 
           {/* <!-- The header content --> */}
@@ -25,7 +25,7 @@ const SectionVideo1 = ({ image, title, subtitle, buttonText }) => {
                         {/* </div>
                       </div> 
                     </div>   */}      
-        </header>
+        </div>
     )
   }
 
