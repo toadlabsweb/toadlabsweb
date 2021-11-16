@@ -13,7 +13,7 @@ const SectionVideo1 = ({ image, title, subtitle, buttonText }) => {
            {/* <div class="hero-overlay"></div> */}
 
             {/* <!-- The HTML5 video element that will create the background video on the header --> */}
-            <video controls preload muted>
+            <video playsinline="playsinline" controls preload muted>
               <source src={TLvideo} type="video/mp4"/>
             </video>
 
