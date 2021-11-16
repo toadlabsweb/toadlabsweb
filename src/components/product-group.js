@@ -20,7 +20,7 @@ const ProductGroup = ({ productgroups }) => {
                   <div className="card-text text-center p-5">
                   <h3>{productgroup.title}</h3>
                   <p>{productgroup.subtitle}</p>
-                  <Link to="/contact">
+                  <Link to={productgroup.buttonLink}>
                   <button className="btn btn-outline-light rounded-0 btn-lg" to="/contact">{productgroup.buttonText}</button> 
                   </Link>
                   </div>
