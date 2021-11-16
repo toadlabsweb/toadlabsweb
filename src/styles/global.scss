@@ -45,7 +45,7 @@ body{
 
 h1 {
     font-family: 'Monoton', cursive;
-    font-size: clamp(2rem, 5vh, 10rem)!important;
+    font-size: clamp(2rem, 8vh, 15rem)!important;
     background: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7); 
 }
 
@@ -53,7 +53,7 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(0,0,0,.2);
-    width: 100%;
+    // width: 100%;
   }
 
 h2, h3, h4, h5, h6 {
@@ -108,9 +108,12 @@ section{
 //     text-align: center;
 // }
 
-
+.btn-outline-light{
+    padding: 1.5rem 4rem !important;
+}
   .btn-outline-light:hover, .btn-outline-light:active, .btn-outline-light:visited {
    background-image: linear-gradient(to right, #FF0000 , #F1E400, #76E244, #00A7E7)!important;
+   
 }
 
 .grad {
