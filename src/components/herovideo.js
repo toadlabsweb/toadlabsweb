@@ -3,7 +3,7 @@
 import * as React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from 'gatsby'
-import TLShark from '../../static/videos/tl2.mp4'  
+import TLShark from '../../static/videos/tl2.mp4'    
 
 const HeroVideo = ({ image, title, subtitle, buttonText }) => {
   
@@ -17,6 +17,8 @@ const HeroVideo = ({ image, title, subtitle, buttonText }) => {
               <source src={TLShark} type="video/mp4"/>
             </video>
 
+            {image && ( <GatsbyImage className="hero-image" alt={title} image={image} /> )} 
+
           {/* <!-- The header content --> */}
                     <div class="container h-100">
                       <div class="d-flex h-100 text-center align-items-center">
@@ -25,7 +27,7 @@ const HeroVideo = ({ image, title, subtitle, buttonText }) => {
                           <div className="hero-text "> 
                             {subtitle && <h1 className="text animate__animated animate__backInDown  animate__delay-1s">{subtitle}</h1>}  
                             <Link to="/contact">
-                              <button className="btn btn-outline-light border-1 btn-lg" >{buttonText}</button>
+                              <button className="btn btn-outline-light border-1 btn-lg">{buttonText}</button>
                             </Link>
                           </div>
                         </div>

@@ -7,12 +7,12 @@ const Partners = ({ partners }) => {
 
   return ( 
 
-    <div className="col-sm-8 offset-sm-2">
+    <div className="col-sm-6 offset-sm-3">
       <h2 className="text-center">OUR PARTNERS</h2>
       <div className="row" > 
         {partners.map((partner) => {
           return (
-            <div className=" card bg-transparent col-sm-4 border-0 rounded-0 g-2" key={partners.id}>
+            <div className=" card bg-transparent col-sm-4 border-0 rounded-0 g-2 p-5" key={partners.id}>
                 <GatsbyImage class="card-img solutions-image" alt="" image={partner.logo.gatsbyImageData} />       
             </div>        
             )

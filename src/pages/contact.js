@@ -1,15 +1,20 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import get from 'lodash/get'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero' 
 import Form from '../components/form' 
-import { IoCallOutline, IoMailOpenOutline, IoLocationOutline } from "react-icons/io5";
+// import { IoCallOutline, IoMailOpenOutline, IoLocationOutline } from "react-icons/io5";
+// import SocialMedia from '../components/socialmedia'
+import Address from '../components/address'
 
 class Contact extends React.Component {
   render() {
     // const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
     // const address = get(this, 'props.data.contentfulContactPage.nodes')
+    // const socialmedia = get(this, 'props.data.socialmedia.nodes')
+    const address = get(this, 'props.data.contentfulContactPage')
 
     return (
       <Layout location={this.props.location}>
@@ -20,12 +25,18 @@ class Contact extends React.Component {
           <div className="container">
             <div className="row">
 
-              <div className="col-md-6 mx-auto my-5"> 
-                <h6 className="mb-4">Toadlabs Technology Inc.</h6>
-                <p> <IoLocationOutline/>  1st floor, Bimola Residency, <br/> Gandhibasti, Guwahati, Assam </p> 
-                <p> <IoCallOutline/>  +91 985 993 4443 </p>
-                <p> <IoMailOpenOutline/> toadlabs@gmail.com </p> 
+              <div className="col-md-6 mx-auto my-5">  
+                <Address  
+                  company={address.company} 
+                  street={address.street} 
+                  streetAddress={address.streetAddress} 
+                  phoneNumber={address.phoneNumber}
+                  altPhoneNumber={address.altPhoneNumber}
+                  email={address.email}
+              />  
               </div>
+
+ 
 
               <div className="col-md-6 mx-auto my-5">
                 <h3 className="text-center my-3">GET IN TOUCH</h3>
@@ -65,11 +76,25 @@ export const pageQuery = graphql`
         }
       }
     }
-    contentfulContactPage(contentful_id: {eq: "6C4Fgt4DLhkGeYK40QdfIF"}) {
-      company
-      address {
-        raw
+      contentfulContactPage {
+        company
+        street
+        streetAddress{
+          childMarkdownRemark {
+            html
+          }
+        }
+        phoneNumber
+        altPhoneNumber
+        email
+      }    
+    socialmedia: allContentfulSocialMediaLinks(sort: {fields: weight, order: ASC}) {
+        nodes {
+          name
+          link
+          icon
+          weight
+        }
       }
-    }
-  } 
+    } 
 `

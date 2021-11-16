@@ -1,33 +1,49 @@
-import React from 'react'
-import { IoLogoFacebook, IoLogoYoutube, IoLogoInstagram } from "react-icons/io5";
+import React from 'react' 
+import { useStaticQuery, graphql } from 'gatsby'
+import SocialMedia from '../components/socialmedia'
+import Address from '../components/address' 
 
-const Footer = () => (
-  <footer> 
+
+export default function Footer() {
+  const data = useStaticQuery(graphql`
+    query FooterQuery {
+      contentfulContactPage {
+        company
+        street
+        streetAddress{
+          childMarkdownRemark {
+            html
+          }
+        }
+        phoneNumber
+        altPhoneNumber
+        email
+      }    
+    } 
+  `)
+  return (
+    <footer> 
     <div className="container"> 
+      <div className="row">
+        <div className="col-sm-6">
+        <Address  
+          company={data.contentfulContactPage.company} 
+          street={data.contentfulContactPage.street} 
+          streetAddress={data.contentfulContactPage.streetAddress} 
+          phoneNumber={data.contentfulContactPage.phoneNumber}
+          altPhoneNumber={data.contentfulContactPage.altPhoneNumber}
+          email={data.contentfulContactPage.email}
+              />  
+        </div>
 
-    <div className="row">
-
-    <div className="col-sm-6  footer-text">
-      <h4>Toadlabs Technologies Inc.</h4>
-      <p>1st floor, Bimola Residency, Gandhibasti, Guwahati, Assam</p> 
-      <p>+91 985 993 4443</p>
-      <p>toadlabs@gmail.com</p>
-      <p>www.toadlabs.biz</p>
-    </div>
-
-    <div className="col-sm-6 text-center footer-icons">
-    <h4>Follow us on</h4>
-      <IoLogoFacebook className="footer-icons mx-3" />
-      <IoLogoYoutube className="footer-icons mx-3" />
-      <IoLogoInstagram className="footer-icons mx-3" />
-    </div>
+        
+        <div className="col-sm-6 text-center footer-icons">
+          <h4>Follow us on</h4> 
+          <SocialMedia />
+        </div>
       
+      </div>
     </div>
-      
-    </div>
-
- 
   </footer>
-)
-
-export default Footer
+  )
+}

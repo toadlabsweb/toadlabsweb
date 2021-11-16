@@ -29,6 +29,9 @@ class SolutionsPostTemplate extends React.Component {
                 <p> {solution.description}</p>
                 <p><div dangerouslySetInnerHTML={{ __html: solution.specs?.childMarkdownRemark?.html, }} /></p> 
             </div>
+            <div className="col-md-12 mt-5"> 
+                <p><div dangerouslySetInnerHTML={{ __html: solution.content?.childMarkdownRemark?.html, }} /></p> 
+            </div>
           </div>
         </div>
         </section>
@@ -77,6 +80,11 @@ export const pageQuery = graphql`
         gatsbyImageData(  placeholder: BLURRED)
       }
       specs {
+        childMarkdownRemark {
+          html 
+        }
+      }
+      content {
         childMarkdownRemark {
           html 
         }

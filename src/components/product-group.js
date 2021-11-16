@@ -14,6 +14,7 @@ const ProductGroup = ({ productgroups }) => {
         {productgroups.map((productgroup) => {
           return (
             <div className="productgroup-item card bg-transparent text-dark col-sm-6 border-2  rounded-0 g-0" key={productgroup.id}>
+              <div class="card-overlay"></div>
                 <GatsbyImage class="card-img productgroup-image" alt="" image={productgroup.image.gatsbyImageData} />  
                   <div className="card-img-overlay d-flex text-center justify-content-center align-items-center"> 
                   <div className="card-text text-center p-5">

@@ -14,6 +14,7 @@ const ContentCreation = ({ contentcreation }) => {
         {contentcreation.map((contentcreationitem) => {
           return (
             <div className="solutions-item card bg-transparent text-dark col-sm-12 border-2 rounded-0 g-0" key={contentcreationitem.id}>
+              <div class="card-overlay"></div>
                 <GatsbyImage class="card-img solutions-image" alt="" image={contentcreationitem.image.gatsbyImageData} />  
                   <div className="card-img-overlay d-flex text-center justify-content-center align-items-center"> 
                   <div className="card-text p-5 ">

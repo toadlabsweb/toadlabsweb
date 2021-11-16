@@ -176,7 +176,7 @@ export const pageQuery = graphql`
           }
         }
       }
-      partners: allContentfulPartners {
+      partners: allContentfulPartners(sort: {fields: weight, order: ASC}) {
         nodes {
           logo {
             gatsbyImageData(layout: FULL_WIDTH, placeholder: TRACED_SVG)
