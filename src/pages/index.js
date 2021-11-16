@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
-import { GatsbyImage } from 'gatsby-plugin-image'
+// import { GatsbyImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout' 
-import HeroImg from '../components/heroimg'
+// import HeroImg from '../components/heroimg'
 import ProductGroup from '../components/product-group'
 import ContentCreation from '../components/contentcreation'
 import Partners from '../components/partners' 
@@ -32,7 +32,7 @@ class RootIndex extends React.Component {
           title={hero.title}
           subtitle={hero.subtitle}
           buttonText={hero.buttonText} 
-        />   */}
+          />   */}
 
           <section>
             <div className="card mb-3 bg-transparent border-0"  >
@@ -160,6 +160,7 @@ export const pageQuery = graphql`
           title
           subtitle
           buttonText
+          buttonLink
           image {
             gatsbyImageData(placeholder: BLURRED, height: 480)
           }
@@ -172,6 +173,7 @@ export const pageQuery = graphql`
           title
           subtitle
           buttonText
+          buttonLink
           image {
             gatsbyImageData(placeholder: BLURRED, height: 480)
           }
