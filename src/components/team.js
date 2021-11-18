@@ -17,7 +17,10 @@ const Team = ({ team }) => {
               <div className="card-body" key={person.id}>
                 <GatsbyImage alt="" image={person.image.gatsbyImageData} />   
                 <h4 className="card-title">{person.name}</h4>
-                <h6 className="card-text">{person.title}</h6>     
+                <h6 className="card-text">{person.title}</h6>
+                <p>
+                <div dangerouslySetInnerHTML={{ __html: person.shortBio?.childMarkdownRemark?.html, }} />     
+                </p>
               </div>
             </div>
           </div> 
