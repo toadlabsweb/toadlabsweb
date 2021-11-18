@@ -15,7 +15,7 @@ const HeroImg = ({ image, title, subtitle, buttonText }) => {
               <div className="hero-text "> 
                 {subtitle && <h1 className="text animate__animated animate__backInDown  animate__delay-1s">{subtitle}</h1>}  
                 <Link to="/contact">
-                  <button className="btn btn-outline-light border-1 btn-lg" >{buttonText}</button>
+                  <button className="btn btn-outline-light border-1 btn-lg animate__animated animate__backInDown  animate__delay-1s" >{buttonText}</button>
                 </Link>
               </div>
             </div>           
