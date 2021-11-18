@@ -3,13 +3,13 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 // import { GatsbyImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout' 
-// import HeroImg from '../components/heroimg'
+import HeroImg from '../components/heroimg'
 import ProductGroup from '../components/product-group'
 import ContentCreation from '../components/contentcreation'
 import Partners from '../components/partners' 
 import SectionVideo1 from '../components/sectionvideo1'
 import SectionVideo2 from '../components/sectionvideo2'
-import HeroVideo from '../components/herovideo'
+// import HeroVideo from '../components/herovideo'
 
 class RootIndex extends React.Component {
   render() { 
@@ -23,16 +23,16 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
 
-      <HeroVideo
+      {/* <HeroVideo
          title={hero.title}
          subtitle={hero.subtitle}
-         buttonText={hero.buttonText}  /> 
-        {/* <HeroImg
+         buttonText={hero.buttonText}  />  */}
+        <HeroImg
           image={hero.image.gatsbyImageData}
           title={hero.title}
           subtitle={hero.subtitle}
           buttonText={hero.buttonText} 
-          />   */}
+          />  
 
           <section>
             <div className="card mb-3 bg-transparent border-0"  >
