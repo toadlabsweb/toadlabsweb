@@ -4,7 +4,6 @@ import get from 'lodash/get'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero' 
-import HeroVideo from '../components/herovideo'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import Team from '../components/team'
 
@@ -19,20 +18,7 @@ class About extends React.Component {
       <Layout location={this.props.location}>
         <Seo title="ABOUT" /> 
         <Hero title="ABOUT"  image={hero.image.GatsbyImageData}/>
-
-        
-          {/*   <section className="text-center">
-                <h1 className="text"> {aboutus.title} </h1>
-                <h2> {aboutus.title} </h2>
-                <h3> {aboutus.title} </h3>
-                <h4> {aboutus.title} </h4>
-                <h5> {aboutus.title} </h5>
-                <h6> {aboutus.title} </h6>
-                <p> {aboutus.title} </p>
-              </section> */}
-
                 
-
         <section>
           <div className="card mb-3 bg-transparent border-0"  >
             <div className="row g-0">
@@ -116,6 +102,11 @@ export const pageQuery = graphql`
         email
         phone
         facebook
+        shortBio {
+          childMarkdownRemark {
+            html
+          }
+        }
         image {
           gatsbyImageData(placeholder: BLURRED, cornerRadius: 100, layout: CONSTRAINED)
         }
