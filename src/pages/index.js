@@ -37,7 +37,7 @@ class RootIndex extends React.Component {
           <section>
             <div className="card mb-3 bg-transparent border-0"  >
               <div className="row g-0">
-                <div className="col-md-6 position-relative">
+                <div className="col-md-6 position-relative d-sm-none d-md-block">
                 {/* <GatsbyImage className="intro-image" image={intro.image.gatsbyImageData}/> */}
                 <SectionVideo1 />      
                 </div>
@@ -62,7 +62,7 @@ class RootIndex extends React.Component {
           <section>    
             <div className="card mb-3 bg-transparent border-0 "  >
               <div className="row g-0">
-                <div className="col-md-6 position-relative"> 
+                <div className="col-md-6 position-relative d-sm-none d-md-block"> 
                 <SectionVideo2 />             
                </div>
 
@@ -173,7 +173,6 @@ export const pageQuery = graphql`
           title
           subtitle
           buttonText
-          buttonLink
           image {
             gatsbyImageData(placeholder: BLURRED, height: 480)
           }
