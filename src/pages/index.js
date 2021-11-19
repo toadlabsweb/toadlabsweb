@@ -28,12 +28,12 @@ class RootIndex extends React.Component {
          subtitle={hero.subtitle}
          buttonText={hero.buttonText}  /> 
 
-        {/* <HeroImg
+        <HeroImg
           image={hero.image.gatsbyImageData}
           title={hero.title}
           subtitle={hero.subtitle}
           buttonText={hero.buttonText} 
-          />   */}
+          />  
 
           <section>
             <div className="card mb-3 bg-transparent border-0"  >
