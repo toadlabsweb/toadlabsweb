@@ -1,19 +1,17 @@
 /** HEROVideo COMPONENT **/
 
 import * as React from "react"
-import { GatsbyImage } from "gatsby-plugin-image"
+// import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from 'gatsby'
-import TLShark from '../../static/videos/tl2.mp4' 
-import TLSharkimg from '../../static/images/tlshark.png'    
+import TLShark from '../../static/videos/tl2.mp4'  
 
 const HeroVideo = ({ image, title, subtitle, buttonText }) => {
   
   return (
-        <header>
+        <header className="d-none d-md-block">
            <div class="hero-overlay"></div>
            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-              <source src={TLShark} type="video/mp4"/>
-              <img alt={title} image={TLSharkimg} />   
+              <source src={TLShark} type="video/mp4"/> 
             </video> 
  
 

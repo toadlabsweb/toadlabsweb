@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 const HeroImg = ({ image, title, subtitle, buttonText }) => {
  
   return (
-        <div>
+        <div className="d-sm-block d-md-none">
           <div className="hero-overlay">  </div>  
           <div>
           {image && ( <GatsbyImage className="hero-image" alt={title} image={image} /> )}  
