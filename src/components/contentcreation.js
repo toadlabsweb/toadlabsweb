@@ -1,3 +1,4 @@
+/** Content Creation COMPONENT **/
 import React from 'react' 
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'  
@@ -20,7 +21,7 @@ const ContentCreation = ({ contentcreation }) => {
                   <div className="card-text p-5 ">
                   <h3>{contentcreationitem.title}</h3>
                   <p>{contentcreationitem.subtitle}</p>
-                   <Link to={contentcreationitem.buttonLink}>
+                  <Link to={contentcreationitem.buttonLink}>
                   <button className="btn btn-outline-light btn-lg rounded-0" to="/contact/">{contentcreationitem.buttonText}</button> 
                   </Link>
                   </div>

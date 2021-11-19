@@ -1,3 +1,4 @@
+/** Tags COMPONENT **/
 import React from 'react'
 
 const Tags = ({ tags }) =>

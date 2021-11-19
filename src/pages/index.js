@@ -9,7 +9,7 @@ import ContentCreation from '../components/contentcreation'
 import Partners from '../components/partners' 
 import SectionVideo1 from '../components/sectionvideo1'
 import SectionVideo2 from '../components/sectionvideo2'
-// import HeroVideo from '../components/herovideo'
+import HeroVideo from '../components/herovideo'
 
 class RootIndex extends React.Component {
   render() { 
@@ -23,22 +23,22 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
 
-      {/* <HeroVideo
+       <HeroVideo
          title={hero.title}
          subtitle={hero.subtitle}
-         buttonText={hero.buttonText}  />  */}
-        <HeroImg
+         buttonText={hero.buttonText}  /> 
+
+        {/* <HeroImg
           image={hero.image.gatsbyImageData}
           title={hero.title}
           subtitle={hero.subtitle}
           buttonText={hero.buttonText} 
-          />  
+          />   */}
 
           <section>
             <div className="card mb-3 bg-transparent border-0"  >
               <div className="row g-0">
-                <div className="col-md-6 position-relative d-none d-md-block">
-                {/* <GatsbyImage className="intro-image" image={intro.image.gatsbyImageData}/> */}
+                <div className="col-md-6 position-relative d-none d-md-block"> 
                 <SectionVideo1 />      
                 </div>
                 <div className="col-md-6  d-flex justify-content-center align-items-center">
@@ -187,4 +187,5 @@ export const pageQuery = graphql`
         }
       }
     }
+
 `

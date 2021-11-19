@@ -1,3 +1,4 @@
+/** Form COMPONENT **/
 import React from 'react' 
 
 const Form = () => (
@@ -21,7 +22,7 @@ const Form = () => (
                   <textarea class="form-control"placeholder="Your Message"  aria-label="With textarea"></textarea>
                 </div>
                 <div className="col-12 text-center">
-                  <button type="submit" className="btn btn-outline-light rounded-0 btn-lg px-5 py-2 ">SUBMIT</button>
+                  <button type="submit" className="btn  btn-outline-light rounded-0 btn-lg px-5 py-2 ">SUBMIT</button>
                 </div>
             </form>
 )

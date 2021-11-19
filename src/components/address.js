@@ -1,3 +1,4 @@
+/** Address COMPONENT **/
 import React from 'react'
 import { IoLocationOutline, IoCallOutline, IoMailOpenOutline } from "react-icons/io5";
  

@@ -4,16 +4,11 @@ import get from 'lodash/get'
 import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero' 
-import Form from '../components/form' 
-// import { IoCallOutline, IoMailOpenOutline, IoLocationOutline } from "react-icons/io5";
-// import SocialMedia from '../components/socialmedia'
+import Form from '../components/form'  
 import Address from '../components/address'
 
 class Contact extends React.Component {
-  render() {
-    // const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
-    // const address = get(this, 'props.data.contentfulContactPage.nodes')
-    // const socialmedia = get(this, 'props.data.socialmedia.nodes')
+  render() { 
     const address = get(this, 'props.data.contentfulContactPage')
 
     return (

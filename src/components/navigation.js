@@ -22,6 +22,7 @@
 )
 
  
+ 
 const menu = data.allContentfulPages?.nodes
   return (
  
@@ -65,4 +66,12 @@ const menu = data.allContentfulPages?.nodes
 }
               
 
+
+
 export default Navigation
+
+ 
+
+
+
+ 

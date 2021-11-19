@@ -1,3 +1,4 @@
+/** Social Media COMPONENT **/
 import React from 'react'
 import { IoLogoFacebook, IoLogoYoutube, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
 import { Link } from 'gatsby' 

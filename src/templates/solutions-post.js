@@ -24,13 +24,12 @@ class SolutionsPostTemplate extends React.Component {
             <div className="col-md-6">
               <GatsbyImage className="image" alt="" image={solution.image.gatsbyImageData} />  
             </div>          
-            <div className="col-md-6">           
-                {/* <h3> {solution.title}</h3>  */}
-                <p> {solution.description}</p>
+            <div className="col-md-6">            
+                <p>{solution.description}</p>
                 <p><div dangerouslySetInnerHTML={{ __html: solution.specs?.childMarkdownRemark?.html, }} /></p> 
             </div>
-            <div className="col-md-12 mt-5"> 
-                <p><div dangerouslySetInnerHTML={{ __html: solution.content?.childMarkdownRemark?.html, }} /></p> 
+            <div className="col-md-12"> 
+               <div dangerouslySetInnerHTML={{ __html: solution.content?.childMarkdownRemark?.html, }} />
             </div>
           </div>
         </div>

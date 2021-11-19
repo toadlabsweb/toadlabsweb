@@ -8,13 +8,10 @@ import TLSharkimg from '../../static/images/tlshark.png'
 
 const HeroVideo = ({ image, title, subtitle, buttonText }) => {
   
- 
   return (
         <header>
            <div class="hero-overlay"></div>
-
-            {/* <!-- The HTML5 video element that will create the background video on the header --> */}
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+           <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
               <source src={TLShark} type="video/mp4"/>
               <img alt={title} image={TLSharkimg} />   
             </video> 
@@ -23,8 +20,7 @@ const HeroVideo = ({ image, title, subtitle, buttonText }) => {
           {/* <!-- The header content --> */}
                     <div class="container h-100">
                       <div class="d-flex h-100 text-center align-items-center">
-                        <div class="text-white">
-                          {/* <h2 class="display-3">TOADLABS</h2>  */}
+                        <div class="text-white"> 
                           <div className="hero-text "> 
                             {subtitle && <h1 className="text animate__animated animate__backInDown  animate__delay-1s">{subtitle}</h1>}  
                             <Link to="/contact">
