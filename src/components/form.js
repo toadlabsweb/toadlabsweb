@@ -3,6 +3,7 @@ import React from 'react'
 
 const Form = () => (
             <form className="row g-3" name="contact" method="POST" action="/thankyou" netlify-honeypot="bot-field" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
                 <p class="hidden">
                     <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
                 </p>
