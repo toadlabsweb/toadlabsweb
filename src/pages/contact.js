@@ -6,7 +6,6 @@ import Layout from '../components/layout'
 import Hero from '../components/hero' 
 import Form from '../components/form'  
 import Address from '../components/address'
-import MyMap from '../components/map'
 
 class Contact extends React.Component {
   render() { 
@@ -38,11 +37,6 @@ class Contact extends React.Component {
               </div>
 
             </div>
-          </div>
-        </section> 
-        <section className="m-0"> 
-          <div className="container-fluid"> 
-              <MyMap/>   
           </div>
         </section> 
       </Layout>
