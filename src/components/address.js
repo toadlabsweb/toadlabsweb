@@ -7,17 +7,17 @@ const Address = ({ company, streetAddress, phoneNumber, altPhoneNumber, email })
         return (  
             <div className="col-md-6 mx-auto"> 
                 <h5 className="mb-4">{company}</h5> 
-                <p class="d-flex"> <IoLocationOutline/> &nbsp; 
+                <p class="d-flex"> <IoLocationOutline className="address-icon"/> &nbsp; 
                   <div dangerouslySetInnerHTML={{ __html: streetAddress?.childMarkdownRemark?.html,}}/> 
                 </p>  
                 <a href = "tel: {phoneNumber}"> 
-                  <p> <IoCallOutline/> {phoneNumber}</p>
+                  <p class="link"> <IoCallOutline className="address-icon" /> {phoneNumber}</p>
                 </a>
                 <a href="tel: {altPhoneNumber}"> 
-                  <p><IoCallOutline/> {altPhoneNumber}</p>
+                  <p class="link"><IoCallOutline className="address-icon" /> {altPhoneNumber}</p>
                 </a>
                 <a href="mailto: {email}"> 
-                  <p><IoMailOpenOutline/> {email}</p>
+                  <p class="link"><IoMailOpenOutline className="address-icon"/> {email}</p>
                 </a>
             </div>          
  )

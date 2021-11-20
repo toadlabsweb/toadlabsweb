@@ -27,24 +27,8 @@ export default function Footer() {
     <footer> 
     <div className="container"> 
       <div className="row">
-        
-        <div className="col-sm-6">
-        <Address  
-          company={data.contentfulContactPage.company} 
-          street={data.contentfulContactPage.street} 
-          streetAddress={data.contentfulContactPage.streetAddress} 
-          phoneNumber={data.contentfulContactPage.phoneNumber}
-          altPhoneNumber={data.contentfulContactPage.altPhoneNumber}
-          email={data.contentfulContactPage.email}
-              />  
-        </div>
 
-        <div className="col-md-3 text-center">
-          <h4 className="mb-5">Follow us on</h4> 
-          <SocialMedia className="footer-icons" />          
-        </div>
-
-        <div className="col-md-3">
+      <div className="col-md-2 d-flex justify-content-center align-items-center">
         <StaticImage
           src="../../static/images/toadlabstecnologyinclogo.png" alt="tllogo"
           className="logo d-inline-block align-top"
@@ -55,6 +39,26 @@ export default function Footer() {
           quality={95}
           /> 
         </div>
+        
+        <div className="col-sm-6 d-flex justify-content-center align-items-center mb-5">
+        <Address  
+          company={data.contentfulContactPage.company} 
+          street={data.contentfulContactPage.street} 
+          streetAddress={data.contentfulContactPage.streetAddress} 
+          phoneNumber={data.contentfulContactPage.phoneNumber}
+          altPhoneNumber={data.contentfulContactPage.altPhoneNumber}
+          email={data.contentfulContactPage.email}
+              />  
+        </div>
+
+        <div className="col-md-4 text-center d-flex justify-content-center  mb-5">
+          <div>
+          <h5 className="mb-5">Follow us on</h5> 
+          <SocialMedia className="footer-icons" />          
+          </div>
+        </div>
+
+        
 
 
       

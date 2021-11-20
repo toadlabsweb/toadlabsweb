@@ -12,8 +12,8 @@ const Partners = ({ partners }) => {
       <div className="row" > 
         {partners.map((partner) => {
           return (
-            <div className=" card bg-transparent col-sm-4 border-0 rounded-0 g-2 p-5" key={partners.id}>
-                <GatsbyImage class="card-img solutions-image" alt="" image={partner.logo.gatsbyImageData} />       
+            <div className="card bg-transparent col-sm-4 border-0 rounded-0 g-3 p-5" key={partners.id}>
+                <GatsbyImage class="card-img" alt="" image={partner.logo.gatsbyImageData} />       
             </div>        
             )
           })}

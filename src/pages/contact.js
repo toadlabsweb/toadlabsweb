@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero' 
 import Form from '../components/form'  
 import Address from '../components/address'
+import MyMap from '../components/map'
 
 class Contact extends React.Component {
   render() { 
@@ -31,14 +32,17 @@ class Contact extends React.Component {
               />  
               </div>
 
- 
-
               <div className="col-md-6 mx-auto my-5">
                 <h3 className="text-center mb-3">GET IN TOUCH</h3>
                 <Form/>   
               </div>
 
             </div>
+          </div>
+        </section> 
+        <section className="m-0"> 
+          <div className="container-fluid"> 
+              <MyMap/>   
           </div>
         </section> 
       </Layout>

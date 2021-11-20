@@ -19,7 +19,7 @@ const ProductItem = ({ products }) => {
               <div className="col-12 col-md-6 product-text p-0 d-flex justify-content-center align-items-center">
                 <div className="m-5">
                   <h3> {product.title} </h3>
-                  <h6> Rs. {product.price} </h6>
+                  {/* <h6> Rs. {product.price} </h6> */}
                   <p>{product.description}</p>
                   <p>{product.content}</p>
                   <p><div dangerouslySetInnerHTML={{ __html: product.specifications?.childMarkdownRemark?.html, }} /></p> 
