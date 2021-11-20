@@ -1,10 +1,23 @@
+:root {
 
-// :root {
-//     --bs-gradient: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7);
-  
-// }
+    /* font-family */
+    --font-body: 'WorkSans var';
+    --font-headings: 'Bitter var';
+    --font-hero: 'Monoton';
 
- // background-image: var(--bs-gradient);.
+
+    /* colors */
+    --primary-bg: #00426f;
+    --secondary-bg: #00243d;
+    --selection-bg: #71bbd8;
+    --footer-bg: #242c30;
+    --font-color: #fff;
+    --font-link-color: #dbdbdb;
+    --white: #fff;
+    --black: #000;
+
+}
+
 
 // :root {
 //     /* primitives */

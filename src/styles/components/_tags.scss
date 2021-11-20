@@ -1,11 +1,9 @@
 .tags {
     display: flex;
-    gap: 1rem; 
-    // gap: var(--space-md);
+    gap: 1rem;  
   }
   
-  .tag {
-    // background-color: var(--black-fade-5);
+  .tag { 
     background-color: rgba(77, 76, 76, 0.555);
     border-radius: var(--radius-sm);
     line-height: var(--solid);

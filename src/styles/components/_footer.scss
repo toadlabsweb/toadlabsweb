@@ -1,20 +1,19 @@
 footer{
-    background: #242c30!important;
+    background: var(--footer-bg);
     margin: 0;
     padding: 4rem 0;
 
     & .footer-text{
         line-height: 10px;
     }
-
 }
 
 .footer-icons{
-    color: rgb(255, 255, 255);
+    color: var(--white);
     font-size: 4rem;
     
     &:hover{
-        color: #00426f;
+        color: var(--primary-bg);
         transform: scale(1.2);
     }
 }

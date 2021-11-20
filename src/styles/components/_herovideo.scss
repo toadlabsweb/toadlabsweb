@@ -52,7 +52,6 @@ header {
     z-index: 1;
   }
   
-
   h1{
     font-size: 3.4rem;
     letter-spacing: 0.3rem;
@@ -65,18 +64,3 @@ header {
         font-size: 2.2rem; 
         }  
     }
-
-
-  /* Media Query for devices withi coarse pointers and no hover functionality */
-  
-  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
-  
-  @media (pointer: coarse) and (hover: none) {
-     header {
-       background: url('../../static/images/tlshark.png') black no-repeat center center scroll;
-     }
-  
-    header video {
-      display: none;
-    }
-  }
