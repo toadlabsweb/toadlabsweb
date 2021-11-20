@@ -48,16 +48,11 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sass",
     {
-      resolve:"gatsby-plugin-google-fonts",
+      resolve: "gatsby-plugin-react-leaflet",
       options: {
-        fonts: [
-          `Bitter`,
-          `Work Sans`,
-          `Monoton`
-        ],
-        display: 'swap'
+        linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
       }
-    },
+    }, 
     {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
