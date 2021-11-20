@@ -54,6 +54,17 @@ module.exports = {
       }
     }, 
     {
+      resolve:"gatsby-plugin-google-fonts",
+      options: {
+        fonts: [
+          `Bitter`,
+          `Work Sans`,
+          `Monoton`
+        ],
+        display: 'swap'
+      }
+    },
+    {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
     },
