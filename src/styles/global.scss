@@ -23,7 +23,7 @@
  
 
 // @font-face {
-//     font-family: 'Bitter var';
+//     font-family: 'Bitter';
 //     font-weight: 100 900;
 //     font-display: swap;
 //     font-style: normal;
@@ -32,7 +32,7 @@
 // }
   
 // @font-face {
-//     font-family: 'Bitter var';
+//     font-family: 'Bitter';
 //     font-weight: 100 900;
 //     font-display: swap;
 //     font-style: italic;
@@ -41,7 +41,7 @@
 // }
 
 // @font-face {
-//     font-family: 'WorkSans var';
+//     font-family: 'WorkSans';
 //     font-weight: 100 900;
 //     font-display: swap;
 //     font-style: normal;
@@ -50,7 +50,7 @@
 // }
   
 // @font-face {
-//     font-family: 'WorkSans var';
+//     font-family: 'WorkSans';
 //     font-weight: 100 900;
 //     font-display: swap;
 //     font-style: italic;
@@ -88,8 +88,12 @@ body{
     color: var(--black);
 }
 
+
+
+
+
 h1 { 
-    font-family: var(--font-hero);
+    font-family: 'Monoton', cursive;
     font-size: 4rem !important;
     background: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7); 
 }
@@ -101,7 +105,7 @@ h1 {
   }
 
 h2, h3, h4, h5, h6 { 
-    font-family: var(--font-headings); 
+    font-family: 'Bitter', serif;
     color: white; 
 }
 
@@ -126,7 +130,7 @@ h6 {
 }
 
 p { 
-    font-family: var(--font-body);
+    font-family: 'Work Sans', sans-serif;
     color: white!important;
     font-size: 1.6rem;
 }
