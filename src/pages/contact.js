@@ -20,7 +20,7 @@ class Contact extends React.Component {
           <div className="container">
             <div className="row">
 
-              <div className="col-md-6 mx-auto my-5">  
+              <div className="col-md-7 mx-auto my-5">  
                 <Address  
                   company={address.company} 
                   street={address.street} 
@@ -31,7 +31,7 @@ class Contact extends React.Component {
               />  
               </div>
 
-              <div className="col-md-6 mx-auto my-5">
+              <div className="col-md-5 mx-auto my-5">
                 <h3 className="text-center mb-3">GET IN TOUCH</h3>
                 <Form/>   
               </div>
