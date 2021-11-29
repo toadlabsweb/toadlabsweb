@@ -35,9 +35,9 @@ class About extends React.Component {
           </div>
         </section>
           
-          <section>
-            <Team team={team} /> 
-          </section>
+//           <section>
+//             <Team team={team} /> 
+//           </section>
 
 
           <section>
