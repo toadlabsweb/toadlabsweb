@@ -40,7 +40,7 @@ export default function Footer() {
           /> 
         </div>
         
-        <div className="col-sm-6 d-flex justify-content-center align-items-center mb-5">
+        <div className="col-sm-7 d-flex justify-content-center align-items-center mb-5">
         <Address  
           company={data.contentfulContactPage.company} 
           street={data.contentfulContactPage.street} 
@@ -51,7 +51,7 @@ export default function Footer() {
               />  
         </div>
 
-        <div className="col-md-4 text-center d-flex justify-content-center  mb-5">
+        <div className="col-md-3 text-center d-flex justify-content-center  mb-5">
           <div>
           <h5 className="mb-5">Follow us on</h5> 
           <SocialMedia className="footer-icons" />          
