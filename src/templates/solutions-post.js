@@ -22,15 +22,17 @@ class SolutionsPostTemplate extends React.Component {
           <div className="container">
             <div className="row">
             <div className="col-md-6">
-              <GatsbyImage className="image" alt="" image={solution.image.gatsbyImageData} />  
+              {/* <GatsbyImage className="image" alt="" image={solution.image.gatsbyImageData} />  */}
+              {/* YOUTUBE LINK */}
+              <div dangerouslySetInnerHTML={{ __html: solution.content?.childMarkdownRemark?.html, }} /> 
             </div>          
             <div className="col-md-6">            
                 <h6 className="mb-5">{solution.description}</h6>
                 <p><div dangerouslySetInnerHTML={{ __html: solution.specs?.childMarkdownRemark?.html, }} /></p> 
             </div>
-            <div className="col-md-12 mt-5"> 
+            {/* <div className="col-md-12 mt-5"> 
                <div dangerouslySetInnerHTML={{ __html: solution.content?.childMarkdownRemark?.html, }} />
-            </div>
+            </div> */}
           </div>
         </div>
         </section>
