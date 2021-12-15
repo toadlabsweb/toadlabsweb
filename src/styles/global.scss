@@ -55,8 +55,7 @@ body{
 h1 { 
     font-family: 'futur';
     font-size: 5vw !important;
-    background: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7);
-    
+    background: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7);  
 }
 
 .text {
@@ -100,7 +99,7 @@ p {
 section{
     padding: 10rem 0!important; 
 
-    &:nth-child(even) { 
+    &:nth-child(odd) { 
         background-color: var(--secondary-bg);
     } 
 
@@ -156,7 +155,7 @@ a, .link{
 /* ABOUT US*/
 .section-image{
     height: 100%;
-    opacity: 5%;
+    opacity: 1%;
     z-index: 0;
 } 
      
