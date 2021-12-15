@@ -17,13 +17,13 @@ class About extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Seo title="ABOUT" /> 
-        <Hero title="ABOUT"  image={hero.image.GatsbyImageData}/>
+        <Hero title=" "  image={hero.image.GatsbyImageData}/>
                 
         <section>
           <div className="card mb-3 bg-transparent border-0"  >
             <div className="row g-0">
               <div className="col-md-5 position-relative">
-               <GatsbyImage className="section-image" image={aboutus.image.gatsbyImageData}/> 
+               {/* <GatsbyImage className="section-image" image={aboutus.image.gatsbyImageData}/>  */}
                 <h2 className="section-text position-absolute top-50 start-50 translate-middle"> {aboutus.title} </h2> 
               </div>
               <div className="col-md-7 d-flex justify-content-center align-items-center">
@@ -35,9 +35,9 @@ class About extends React.Component {
           </div>
         </section>
           
-//           <section>
-//             <Team team={team} /> 
-//           </section>
+          {/* <section>
+            <Team team={team} /> 
+          </section> */}
 
 
           <section>
@@ -53,7 +53,7 @@ class About extends React.Component {
                   </div>
                 </div>
                <div className="col-md-4 position-relative d-none d-md-block">
-                  <GatsbyImage className="section-image" image={ourstory.image.gatsbyImageData}/>
+                  {/* <GatsbyImage className="section-image" image={ourstory.image.gatsbyImageData}/> */}
                   <h2 className="section-text position-absolute top-50 start-50 translate-middle "> {ourstory.title} </h2>
                 </div>
               </div>

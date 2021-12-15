@@ -22,7 +22,7 @@ const HeroVideo = ({ image, title, subtitle, buttonText }) => {
                           <div className="hero-text "> 
                             {subtitle && <h1 className="text animate__animated animate__backInDown  animate__delay-1s">{subtitle}</h1>}  
                             <Link to="/contact">
-                              <button className="btn btn-outline-light border-1 btn-lg animate__animated animate__backInDown  animate__delay-2s">{buttonText}</button>
+                              <button className="btn btn-outline-light rounded-0 btn-lg animate__animated animate__backInDown  animate__delay-2s">{buttonText}</button>
                             </Link>
                           </div>
                         </div>

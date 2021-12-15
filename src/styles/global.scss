@@ -11,61 +11,24 @@
 @use 'components/solutions-item';
 @use 'components/tags';
 @use 'components/team';
-@use 'components/variables';
-@use 'pages/solutions';
-@use 'pages/aboutus';
-@use 'pages/blog';
-@use 'pages/contact';
-@use 'pages/index';
-@use 'pages/products';
 @use 'templates/blog-post';
-
+@use './variables';
  
 
-// @font-face {
-//     font-family: 'Bitter';
-//     font-weight: 100 900;
-//     font-display: swap;
-//     font-style: normal;
-//     font-named-instance: 'Regular';
-//     src: url('/fonts/Bitter-VariableFont_wght.woff2') format('woff2');
-// }
-  
-// @font-face {
-//     font-family: 'Bitter';
-//     font-weight: 100 900;
-//     font-display: swap;
-//     font-style: italic;
-//     font-named-instance: 'Italic';
-//     src: url('/fonts/Bitter-Italic-VariableFont_wght.woff2') format('woff2');
-// }
+@font-face {
+    font-family: 'futur'; 
+    src: url('/fonts/futur.woff2') format('woff2');
+} 
 
-// @font-face {
-//     font-family: 'WorkSans';
-//     font-weight: 100 900;
-//     font-display: swap;
-//     font-style: normal;
-//     font-named-instance: 'Regular';
-//     src: url('/fonts/WorkSans-VariableFont_wght.woff2') format('woff2');
-// }
-  
-// @font-face {
-//     font-family: 'WorkSans';
-//     font-weight: 100 900;
-//     font-display: swap;
-//     font-style: italic;
-//     font-named-instance: 'Italic';
-//     src: url('/fonts/WorkSans-Italic-VariableFont_wght.woff2') format('woff2');
-// }
+@font-face {
+    font-family: 'Montserrat-Regular'; 
+    src: url('/fonts/Montserrat-Regular.woff2') format('woff2');
+}
 
-// @font-face {
-//     font-family: 'Monoton';
-//     font-weight: 400;
-//     font-display: swap;
-//     font-style: regular;
-//     font-named-instance: 'Regular';
-//     src: url('/fonts/Monoton-Regular.woff2') format('woff2');
-// }
+@font-face {
+    font-family: 'Roboto-Regular'; 
+    src: url('/fonts/Roboto-Regular.woff2') format('woff2');
+}
 
 
 html {
@@ -80,7 +43,7 @@ html * {
       
 
 body{
-    background-color: #00426f!important;
+    background-color: var(--primary-bg)!important;
 }
 
 ::selection {
@@ -89,23 +52,22 @@ body{
 }
 
 
-
-
-
 h1 { 
-    font-family: 'Monoton', cursive;
-    font-size: 4rem !important;
-    background: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7); 
+    font-family: 'futur';
+    font-size: 5vw !important;
+    background: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7);
+    
 }
 
 .text {
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(0,0,0,.2); 
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.103); 
   }
 
 h2, h3, h4, h5, h6 { 
-    font-family: 'Bitter', serif;
+    font-family: 'futur';
     color: white; 
 }
 
@@ -130,19 +92,28 @@ h6 {
 }
 
 p { 
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat-Regular'; 
     color: white!important;
     font-size: 1.6rem;
 }
 
 section{
-    margin: 5rem 0; 
+    padding: 10rem 0!important; 
+
+    &:nth-child(even) { 
+        background-color: var(--secondary-bg);
+    } 
+
+    &.productgroup-section{
+        padding: 0!important;
+    }
 }
 
 .btn-outline-light{
     margin-top: 1rem;
     padding: 1rem 4rem !important;
-    text-transform: uppercase!important; 
+    text-transform: uppercase!important;
+    font-size: 1.8rem!important;
 }
   .btn-outline-light:hover, .btn-outline-light:active, .btn-outline-light:visited {
    background-image: linear-gradient(to right, #FF0000 , #F1E400, #76E244, #00A7E7)!important;
@@ -155,19 +126,61 @@ a, .link{
     text-decoration: none !important;
     
     &:hover{
-      color: rgba(124, 124, 124, 0.493) !important; 
+      color: rgba(129, 129, 129, 0.5) !important; 
    } 
 }
- 
-.card-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
+
+/* INDEX */
+.intro-image{
     height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
+    opacity: 75%;
+    z-index: 0;
+} 
+     
+.intro-text{  
+    font-size: 4rem; 
+    z-index: 10;  
 }
 
 
+.howwework-image{
+    height: 100%;
+    opacity: 75%;
+    z-index: 0;
+} 
+     
+.howwework-text{   
+    z-index: 10;  
+}
+
+/* ABOUT US*/
+.section-image{
+    height: 100%;
+    opacity: 5%;
+    z-index: 0;
+} 
+     
+.section-text{  
+    font-size: 4rem; 
+    z-index: 10;  
+}
+ 
+/* SOLUTIONS */
+
+.post-list{
+    list-style: none;
+}
+
+/* CONTACT */
+
+.address-icon{
+    font-size: 2rem;
+}
+
+
+.card-img{
+    // transform: scale(0.8);
+    &:hover{
+        transform: scale(1.02);
+    }
+}

@@ -12,7 +12,7 @@ const Partners = ({ partners }) => {
       <div className="row" > 
         {partners.map((partner) => {
           return (
-            <div className="card bg-transparent col-sm-4 border-0 rounded-0 g-3 p-5" key={partners.id}>
+            <div className="card bg-transparent col-sm-4 border-0 rounded-0 g-5 p-4" key={partners.id}>
                 <GatsbyImage class="card-img" alt="" image={partner.logo.gatsbyImageData} />       
             </div>        
             )

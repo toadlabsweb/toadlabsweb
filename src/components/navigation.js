@@ -30,12 +30,12 @@ const menu = data.allContentfulPages?.nodes
     <div className="container">
       <Link className="navbar-brand" to="/">
       <StaticImage
-        src="../../static/images/toadlabstecnologyinclogo.png" alt="tllogo"
+        src="../../static/images/toadlabstecnologyinclogo1.png" alt="tllogo"
         className="logo d-inline-block align-top"
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
-        width={100}
-        height={100}
+        width={120}
+        height={120}
         quality={95}
       />  
         <span className="hidden">ToadLabs Technologies Inc.</span>
@@ -54,7 +54,7 @@ const menu = data.allContentfulPages?.nodes
         <ul className="navbar-nav ms-auto text-center mb-2 mb-lg-0">
           {menu.map((data) => {
             return (  
-              <li className="nav-item" key={data.id}>
+              <li className="nav-item me-4" key={data.id}>
                 <Link to={data.url} className="nav-link text-light" activeClassName="nav-active">{data.pageTitle}</Link>
               </li> 
               )})}

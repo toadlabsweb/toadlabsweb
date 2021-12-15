@@ -30,12 +30,12 @@ export default function Footer() {
 
       <div className="col-md-2 d-flex justify-content-center align-items-center">
         <StaticImage
-          src="../../static/images/toadlabstecnologyinclogo.png" alt="tllogo"
+          src="../../static/images/toadlabstecnologyinclogo1.png" alt="tllogo"
           className="logo d-inline-block align-top"
           layout="fixed"
           formats={["AUTO", "WEBP", "AVIF"]}
-          width={250}
-          height={250}
+          width={220}
+          height={220}
           quality={95}
           /> 
         </div>

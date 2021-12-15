@@ -50,7 +50,7 @@ class RootIndex extends React.Component {
             </div>
           </section>
         
-          <section>
+          <section className="productgroup-section">
               <ProductGroup productgroups={productgroups} /> 
               <ContentCreation contentcreation={contentcreation} /> 
           </section>

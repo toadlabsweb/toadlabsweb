@@ -19,8 +19,8 @@ const ContentCreation = ({ contentcreation }) => {
                 <GatsbyImage class="card-img solutions-image" alt="" image={contentcreationitem.image.gatsbyImageData} />  
                   <div className="card-img-overlay d-flex text-center justify-content-center align-items-center"> 
                   <div className="card-text p-5 ">
-                  <h3>{contentcreationitem.title}</h3>
-                  <p>{contentcreationitem.subtitle}</p>
+                  <h3 className="pb-5">{contentcreationitem.title}</h3>
+                  <p className="pb-5">{contentcreationitem.subtitle}</p>
                   <Link to={contentcreationitem.buttonLink}>
                   <button className="btn btn-outline-light btn-lg rounded-0" to="/contact/">{contentcreationitem.buttonText}</button> 
                   </Link>

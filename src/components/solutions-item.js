@@ -19,8 +19,8 @@ const SolutionsItem = ({ solutions }) => {
                 <GatsbyImage className="card-img solutions-image" alt="" image={solution.image.gatsbyImageData} />  
                   <div className="card-img-overlay d-flex text-center justify-content-center align-items-center"> 
                     <div className="card-text p-5">
-                      <h3 className="text-dark"> {solution.title}</h3> 
-                      <p className="text-dark"> {solution.description}</p>
+                      <h3 className="text-dark pb-5"> {solution.title}</h3> 
+                      <p className="text-dark pb-5"> {solution.description}</p>
                         <button className="btn btn-outline-light rounded-0 border-1 btn-lg"> Learn More </button>
                     </div>
                   </div>

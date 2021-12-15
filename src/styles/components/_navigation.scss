@@ -8,14 +8,14 @@
         color: rgb(187, 187, 187);
     }
     
-    & .active {
+    &.active {
         color: rgb(197, 50, 50);
         text-decoration: none;
     }
 }
 
 .navbar-custom {
-    background-color: rgba(66, 66, 66, 0.75);
+    background-color: rgba(36, 35, 35, 0.8);
 }
 
 .hidden{

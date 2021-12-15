@@ -21,7 +21,7 @@ class SolutionsPostTemplate extends React.Component {
         <section>
           <div className="container">
             <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 pe-5">
               {/* <GatsbyImage className="image" alt="" image={solution.image.gatsbyImageData} />  */}
               {/* YOUTUBE LINK */}
               <div dangerouslySetInnerHTML={{ __html: solution.content?.childMarkdownRemark?.html, }} /> 
@@ -38,9 +38,9 @@ class SolutionsPostTemplate extends React.Component {
         </section>
 
         <div className="container">
-            <hr className="text-white mt-5"/> 
+            {/* <hr className="text-white mt-5"/>  */}
             {(previous || next) && (
-              <nav>
+              <nav className=" m-5">
                 <ul className="articleNavigation">
                   {previous && (
                     <li>
