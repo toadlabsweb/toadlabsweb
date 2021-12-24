@@ -1,11 +1,22 @@
 footer{
-    background: var(--footer-bg);
+    border-top: 2px solid black;
+    background: var(--footer-bg); 
     margin: 0;
     padding: 4rem 0;
 
     & .footer-text{
         line-height: 10px;
     }
+}
+
+.footer-topborder{
+    background: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7); 
+    height: 0.2rem;
+}
+
+hr{
+    color: rgb(255, 255, 255)!important;
+    height: 0.2rem;
 }
 
 .footer-icons{
