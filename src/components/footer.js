@@ -24,7 +24,8 @@ export default function Footer() {
     } 
   `)
   return (
-    <footer> 
+    <footer className="p-0"> 
+    <div className=" footer-topborder mb-5"> </div>
     <div className="container"> 
       <div className="row">
 
@@ -61,6 +62,11 @@ export default function Footer() {
         
 
 
+      
+      </div>
+      <div className="row"> 
+      <hr/>
+      <p> <small className="text-muted">Property of Toadlabs Tecnology Inc© 2022</small> </p>
       
       </div>
     </div>
