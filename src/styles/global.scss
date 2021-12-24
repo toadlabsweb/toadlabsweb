@@ -54,7 +54,7 @@ body{
 
 h1 { 
     font-family: 'futur';
-    font-size: 5vw !important;
+    font-size: clamp(4rem, 5vw + 1rem, 8rem) !important;
     background: linear-gradient(to right, #FF0000, #F1E400, #76E244, #00A7E7);
     
 }
