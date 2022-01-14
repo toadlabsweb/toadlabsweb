@@ -1,7 +1,7 @@
 /** Section Video 2 COMPONENT **/
 
 import * as React from "react" 
-import TLvideo from '../../static/videos/tlvideo.mp4'    
+import TLvideo from '../../static/videos/all3techs.mp4'    
 
 const SectionVideo2 = ({ image, title, subtitle, buttonText }) => {
   
