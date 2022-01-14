@@ -9,7 +9,7 @@ const SectionVideo2 = ({ image, title, subtitle, buttonText }) => {
   return (
         <div className="section-video">
             <video playsinline controls preload muted>
-              <source src={TLvideo} type="video/mp4"/>
+              <source src="https://drive.google.com/file/d/1YdjwEoCA07vqqxM5nhDMiI8Yup80Z9cH/preview" type="video/mp4"/>
             </video> 
         </div>
     )
