@@ -13,9 +13,9 @@ const Address = ({ company, streetAddress, phoneNumber, altPhoneNumber, email })
                 <a href = "tel: {phoneNumber}"> 
                   <p class="link"> <IoCallOutline className="address-icon" /> {phoneNumber}</p>
                 </a>
-                <a href="tel: {altPhoneNumber}"> 
-                  <p class="link"><IoCallOutline className="address-icon" /> {altPhoneNumber}</p>
-                </a>
+//                 <a href="tel: {altPhoneNumber}"> 
+//                   <p class="link"><IoCallOutline className="address-icon" /> {altPhoneNumber}</p>
+//                 </a>
                 <a href="mailto: {email}"> 
                   <p class="link"><IoMailOpenOutline className="address-icon"/> {email}</p>
                 </a>
