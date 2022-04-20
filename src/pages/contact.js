@@ -26,7 +26,7 @@ class Contact extends React.Component {
                   street={address.street} 
                   streetAddress={address.streetAddress} 
                   phoneNumber={address.phoneNumber}
-                  altPhoneNumber={address.altPhoneNumber}
+//                   altPhoneNumber={address.altPhoneNumber}
                   email={address.email}
               />  
               </div>
@@ -78,7 +78,6 @@ export const pageQuery = graphql`
           }
         }
         phoneNumber
-        altPhoneNumber
         email
       }    
     socialmedia: allContentfulSocialMediaLinks(sort: {fields: weight, order: ASC}) {
