@@ -2,7 +2,7 @@
 import React from 'react'
 import { IoLocationOutline, IoCallOutline, IoMailOpenOutline } from "react-icons/io5";
  
-const Address = ({ company, streetAddress, phoneNumber, altPhoneNumber, email }) => {
+const Address = ({ company, streetAddress, phoneNumber, email }) => {
        
         return (  
             <div className="col-md-6 mx-auto"> 
