@@ -46,7 +46,6 @@ export default function Footer() {
           street={data.contentfulContactPage.street} 
           streetAddress={data.contentfulContactPage.streetAddress} 
           phoneNumber={data.contentfulContactPage.phoneNumber}
-//           altPhoneNumber={data.contentfulContactPage.altPhoneNumber}
           email={data.contentfulContactPage.email}
               />  
         </div>
